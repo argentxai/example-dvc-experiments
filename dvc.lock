@@ -37,8 +37,8 @@ stages:
     cmd: echo 'Saturday 17 December 2022 11:34:09 PM IST' > outs.txt
     deps:
     - path: deps.txt
-      md5: 6265b22b66502d70d5f004f08238ac3c
-      size: 10
+      md5: e48a050416a390585c47eba2390e28b3
+      size: 16
     outs:
     - path: outs.txt
       md5: cf8a25a4d96b1c93473fabdeba1c7773
