@@ -8,8 +8,8 @@ stages:
       size: 17397976
       nfiles: 3
     - path: src
-      md5: 57f99becc6efff8a309d9527133f5f14.dir
-      size: 13860
+      md5: c220b695187b4162da2197d56a06b700.dir
+      size: 13834
       nfiles: 4
     params:
       params.yaml:
@@ -19,17 +19,27 @@ stages:
           epochs: 10
     outs:
     - path: dvclive/metrics.json
-      md5: 7517775fd68e9b34ac14900fa880a1ed
-      size: 203
+      md5: c45115613c6c749ac55c919441c10464
+      size: 201
     - path: dvclive/plots
-      md5: cc56c2d7515bec2b09e83ecef076144b.dir
-      size: 921
+      md5: 85b9b06fb7818ff8390118c57471d76f.dir
+      size: 914
       nfiles: 4
     - path: models
-      md5: ae89d9f09588702383a104a1ccada989.dir
-      size: 4208952
+      md5: 095d1f80757b51fb19b7795163ca8144.dir
+      size: 4207648
       nfiles: 1
     - path: plots
-      md5: 959b84f35ac76a04a886d433e4d78300.dir
-      size: 70715
+      md5: afeb18f9fa9424a322203f412cc98dc1.dir
+      size: 74676
       nfiles: 2
+  mystage:
+    cmd: echo 'Saturday 17 December 2022 11:34:09 PM IST' > outs.txt
+    deps:
+    - path: deps.txt
+      md5: 6265b22b66502d70d5f004f08238ac3c
+      size: 10
+    outs:
+    - path: outs.txt
+      md5: cf8a25a4d96b1c93473fabdeba1c7773
+      size: 42

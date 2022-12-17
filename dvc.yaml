@@ -16,3 +16,9 @@ stages:
         cache: false
     - plots:
         cache: false
+  mystage:
+    cmd: echo 'Saturday 17 December 2022 11:34:09 PM IST' > outs.txt
+    deps:
+    - deps.txt
+    outs:
+    - outs.txt
